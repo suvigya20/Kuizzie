@@ -1,0 +1,139 @@
+﻿.img2 {
+    position: absolute;
+    top: 161px;
+    left: 700px;
+}
+
+    .img2 img {
+        margin-top: -99px;
+        width: 129px;
+        height: 129px;
+        border-radius: 50%;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    background-image: url('imgs/c5.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_sec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_info {
+    color: white;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+    margin-top: 220px;
+}
+
+.contact_form {
+    margin-top: 250px;
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact_info, .contact_form {
+    flex: 1;
+}
+
+    .contact_form h2 {
+        color: white;
+        text-align: left;
+        font-size: 35px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    .contact_form .box {
+        background: black;
+        color: white;
+        border: none;
+        width: calc (50% -10px);
+        height: 50px;
+        padding: 12px;
+        font-size: 15px;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px yellow;
+        margin-bottom: 20px;
+        opacity: 0.8;
+    }
+
+        .contact_form .box:first-child {
+            margin-right: 15px;
+        }
+
+    .contact_form textarea {
+        background: black;
+        color: white;
+        border: none;
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+        min-height: 200px;
+        max-height: 400px;
+        resize: vertical;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgb(254, 254, 216);
+        margin-bottom: 20px;
+        opacity: 0.8;
+    }
+
+    .contact_form .send {
+        float: right;
+        background: rgb(68, 178, 251);
+        color: white;
+        border: none;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: background;
+        margin-top: 140px;
+    }
+
+        .contact_form .send:hover {
+            background: rgb(64, 64, 250);
+        }
+
+@media screen and (max-width: 950px) {
+    .contact_sec {
+        flex-direction: column;
+    }
+
+    .contact_info, .contact_form {
+        margin: 30px 50px;
+    }
+
+        .contact_form h2 {
+            font-size: 30px;
+        }
+
+        .contact_form .box {
+            width: 100%
+        }
+}
+
+.j {
+    margin-left: -101px;
+}

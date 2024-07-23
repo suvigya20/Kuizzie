@@ -1,0 +1,387 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Calibri;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('imgs/bbg1.jpg');
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 60px;
+    }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 30px;
+        }
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+
+.card {
+    width: 250px;
+    height: 270px;
+    display: inline-block;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.2s;
+}
+
+.card1 {
+    background-image: url('imgs/q4.jpg');
+}
+
+.card2 {
+    background-image: url('imgs/c2.jpg');
+}
+
+.card3 {
+    background-image: url('imgs/b6.jpg');
+}
+
+.card4 {
+    background-image: url('imgs/c8.jpg');
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h3 {
+    color: #000;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    text-shadow: 0 0 15px #000;
+    font-size: 20px;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: -1850px;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row2 {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col2 {
+    flex-basis: 20px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+    .col2:nth-child(2), .col:nth-child(3) {
+        flex-basis: 15%;
+    }
+
+.logo1 {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+.col2 h2 {
+    color: #fff;
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.col2 ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+    .col2 ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+    form input {
+        width: 100%;
+        background: transparent;
+        color: #ccc;
+        border: 0;
+        outline: none;
+    }
+
+    form button {
+        background: yellow;
+        border: 0;
+        outline: none;
+        cursor: pointer;
+    }
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+@media (max-width:700px;) {
+    footer {
+        bottom: unset;
+    }
+
+    .col2 {
+        flex-basis: 100%;
+    }
+
+        .col2:nth-child(2), .col:nth-child(3) {
+            flex-basis: 100%;
+        }
+}
+
+main {
+    overflow-y: hidden;
+    flex: auto;
+    width: 100%;
+    background-size: cover;
+    background-image: url('imgs/f4.jpg');
+    position: absolute;
+    bottom: -1335px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    margin-left: 157px;
+    margin-top: 151px;
+}
+
+.flip-card3 {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    margin-left: 600px;
+    margin-top: -400px;
+}
+
+.flip-card2 {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    margin-left: 1041px;
+    margin-top: -399px;
+}
+
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card3:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card2:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 30px;
+}
+
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 30px;
+}
+
+.flip-card-back {
+    font-size: 20px;
+    font-family: forte;
+    background-color: #9c4fe1;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card4 {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    margin-left: 157px;
+    margin-top: 151px;
+}
+
+.flip-card5 {
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    margin-left: 600px;
+    margin-top: -400px;
+}
+
+.flip-card4:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card5:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.colx {
+    margin-left: 100px;
+}
+
+.coly {
+    margin-left: 348px;
+}
+
+.z {
+    color: black;
+    margin-top: 80px;
+    font-size: 40px;
+    font-family: Calibri;
+    text-align: center;
+}
+
+.z1 {
+    color: black;
+    font-size: 30px;
+    font-family: Calibri;
+    text-align: center;
+}
+
+.l {
+    background-color: aqua;
+}
+
+.h {
+    margin-left: 650px;
+    font-family: Algerian;
+    font-size: 50px;
+    color: #3576ce;
+}
+
+.lg {
+    height: 40px;
+    width: 178px;
+    background-color: red;
+    color: white;
+    border-radius: 27px;
+}
+

@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ACA1B899-AA94-4264-9556-C8FB38F3271E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Projectkz</RootNamespace>
+    <AssemblyName>Projectkz</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44377</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.4.1\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="aboutus.aspx" />
+    <Content Include="acc.aspx" />
+    <Content Include="acc.css" />
+    <Content Include="accountscript.js" />
+    <Content Include="accquiz.aspx" />
+    <Content Include="admin.css" />
+    <Content Include="adminhome.aspx" />
+    <Content Include="ai.aspx" />
+    <Content Include="ai.css" />
+    <Content Include="aiml.aspx" />
+    <Content Include="alog.css" />
+    <Content Include="alogin.aspx" />
+    <Content Include="App_Data\kzdb.mdf" />
+    <Content Include="App_Data\kzdb_log.ldf">
+      <DependentUpon>kzdb.mdf</DependentUpon>
+    </Content>
+    <Content Include="Areg.aspx" />
+    <Content Include="areg.css" />
+    <Content Include="artintscript.js" />
+    <Content Include="b1.css" />
+    <Content Include="bio.aspx" />
+    <Content Include="bio.css" />
+    <Content Include="bioquiz.aspx" />
+    <Content Include="bookhpg.aspx" />
+    <Content Include="bscript.js" />
+    <Content Include="chem.aspx" />
+    <Content Include="chem.css" />
+    <Content Include="chemquiz.aspx" />
+    <Content Include="chemscript.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="cpp.aspx" />
+    <Content Include="cpp.css" />
+    <Content Include="cppquiz.aspx" />
+    <Content Include="cppscript.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="eco.aspx" />
+    <Content Include="eco.css" />
+    <Content Include="economicscript.js" />
+    <Content Include="ecooquiz.js" />
+    <Content Include="ecoquiz.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="feedback.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fp.aspx" />
+    <Content Include="fp.css" />
+    <Content Include="Fun.aspx" />
+    <Content Include="fun.css" />
+    <Content Include="fun2.aspx" />
+    <Content Include="fun2.css" />
+    <Content Include="Game.aspx" />
+    <Content Include="Game.css" />
+    <Content Include="Game.js" />
+    <Content Include="Global.asax" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="imgs\a1.jpg" />
+    <Content Include="imgs\a2.jpg" />
+    <Content Include="imgs\a3.jpg" />
+    <Content Include="imgs\acc.jpg" />
+    <Content Include="imgs\ai1.jpg" />
+    <Content Include="imgs\ai2.jpg" />
+    <Content Include="imgs\ati.jpg" />
+    <Content Include="imgs\bi1.jpg" />
+    <Content Include="imgs\bi2.jpg" />
+    <Content Include="imgs\bi3.jpg" />
+    <Content Include="imgs\bio.jpg" />
+    <Content Include="imgs\bk.jpg" />
+    <Content Include="imgs\bk1.jpg" />
+    <Content Include="imgs\bk2.jpg" />
+    <Content Include="imgs\bk3.jpg" />
+    <Content Include="imgs\c5.jpg" />
+    <Content Include="imgs\chem.jpg" />
+    <Content Include="imgs\chem1.jpg" />
+    <Content Include="imgs\chem2.jpg" />
+    <Content Include="imgs\chem3.jpg" />
+    <Content Include="imgs\cp.jpg" />
+    <Content Include="imgs\cp1.jpg" />
+    <Content Include="imgs\cp2.jpg" />
+    <Content Include="imgs\cp3.jpg" />
+    <Content Include="imgs\e1.jpg" />
+    <Content Include="imgs\e2.jpg" />
+    <Content Include="imgs\e3.jpg" />
+    <Content Include="imgs\eco.jpg" />
+    <Content Include="imgs\f1.jpg" />
+    <Content Include="imgs\f2.jpg" />
+    <Content Include="imgs\f4.jpg" />
+    <Content Include="imgs\f5.jpg" />
+    <Content Include="imgs\f6.jpg" />
+    <Content Include="imgs\f8.jpg" />
+    <Content Include="imgs\g.jpg" />
+    <Content Include="imgs\j.jpg" />
+    <Content Include="imgs\j1.jpg" />
+    <Content Include="imgs\j2.jpg" />
+    <Content Include="imgs\j3.jpg" />
+    <Content Include="imgs\n2.jpg" />
+    <Content Include="imgs\n3.jpg" />
+    <Content Include="imgs\net.jpg" />
+    <Content Include="imgs\o1.jpg" />
+    <Content Include="imgs\o2.jpg" />
+    <Content Include="imgs\o3.jpg" />
+    <Content Include="imgs\op.jpg" />
+    <Content Include="imgs\p.jpg" />
+    <Content Include="imgs\ph1.jpg" />
+    <Content Include="imgs\ph2.jpg" />
+    <Content Include="imgs\ph3.jpg" />
+    <Content Include="imgs\phy.jpg" />
+    <Content Include="imgs\q3.jpg" />
+    <Content Include="java.aspx" />
+    <Content Include="java.css" />
+    <Content Include="javaquiz.aspx" />
+    <Content Include="javascript.js" />
+    <Content Include="m1.css" />
+    <Content Include="m2.css" />
+    <Content Include="m3.css" />
+    <Content Include="MG2.aspx" />
+    <Content Include="MG2.css" />
+    <Content Include="MG3.aspx" />
+    <Content Include="MG3.css" />
+    <Content Include="Mind.css" />
+    <Content Include="MindGames.aspx" />
+    <Content Include="net.aspx" />
+    <Content Include="net.css" />
+    <Content Include="netquiz.aspx" />
+    <Content Include="netscript.js" />
+    <Content Include="op.aspx" />
+    <Content Include="op.css" />
+    <Content Include="osquiz.aspx" />
+    <Content Include="osscript.js" />
+    <Content Include="phy.aspx" />
+    <Content Include="phy.css" />
+    <Content Include="phyquiz.aspx" />
+    <Content Include="physcript.js" />
+    <Content Include="q1.css" />
+    <Content Include="q2.css" />
+    <Content Include="quizhpg.aspx" />
+    <Content Include="reg.css" />
+    <Content Include="services.aspx" />
+    <Content Include="x1.css" />
+    <Content Include="x2.css" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="home.aspx" />
+    <Content Include="Homeaft.aspx" />
+    <Content Include="home.css" />
+    <Content Include="imgs\b6.jpg" />
+    <Content Include="imgs\b7.jpg" />
+    <Content Include="imgs\bbg1.jpg" />
+    <Content Include="imgs\bc.jpg" />
+    <Content Include="imgs\c1.jpg" />
+    <Content Include="imgs\c10.jpg" />
+    <Content Include="imgs\c2.jpg" />
+    <Content Include="imgs\c4.jpg" />
+    <Content Include="imgs\c8.jpg" />
+    <Content Include="imgs\c9.jpg" />
+    <Content Include="imgs\logo.jpg" />
+    <Content Include="imgs\me.jpg" />
+    <Content Include="imgs\MG2.jpg" />
+    <Content Include="imgs\MG3.jpg" />
+    <Content Include="imgs\q4.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="Login.css" />
+    <Content Include="Registerkz.aspx" />
+    <Content Include="RegStyle.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboutus.aspx.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aboutus.aspx.designer.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="acc.aspx.cs">
+      <DependentUpon>acc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="acc.aspx.designer.cs">
+      <DependentUpon>acc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="accquiz.aspx.cs">
+      <DependentUpon>accquiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="accquiz.aspx.designer.cs">
+      <DependentUpon>accquiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminhome.aspx.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminhome.aspx.designer.cs">
+      <DependentUpon>adminhome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ai.aspx.cs">
+      <DependentUpon>ai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ai.aspx.designer.cs">
+      <DependentUpon>ai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aiml.aspx.cs">
+      <DependentUpon>aiml.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aiml.aspx.designer.cs">
+      <DependentUpon>aiml.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="alogin.aspx.cs">
+      <DependentUpon>alogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alogin.aspx.designer.cs">
+      <DependentUpon>alogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areg.aspx.cs">
+      <DependentUpon>Areg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Areg.aspx.designer.cs">
+      <DependentUpon>Areg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bio.aspx.cs">
+      <DependentUpon>bio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bio.aspx.designer.cs">
+      <DependentUpon>bio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bioquiz.aspx.cs">
+      <DependentUpon>bioquiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bioquiz.aspx.designer.cs">
+      <DependentUpon>bioquiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="bookhpg.aspx.cs">
+      <DependentUpon>bookhpg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="bookhpg.aspx.designer.cs">
+      <DependentUpon>bookhpg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chem.aspx.cs">
+      <DependentUpon>chem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chem.aspx.designer.cs">
+      <DependentUpon>chem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chemquiz.aspx.cs">
+      <DependentUpon>chemquiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="chemquiz.aspx.designer.cs">
+      <DependentUpon>chemquiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cpp.aspx.cs">
+      <DependentUpon>cpp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cpp.aspx.designer.cs">
+      <DependentUpon>cpp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cppquiz.aspx.cs">
+      <DependentUpon>cppquiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cppquiz.aspx.designer.cs">
+      <DependentUpon>cppquiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="eco.aspx.cs">
+      <DependentUpon>eco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="eco.aspx.designer.cs">
+      <DependentUpon>eco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ecoquiz.aspx.cs">
+      <DependentUpon>ecoquiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ecoquiz.aspx.designer.cs">
+      <DependentUpon>ecoquiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fp.aspx.cs">
+      <DependentUpon>fp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fp.aspx.designer.cs">
+      <DependentUpon>fp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fun.aspx.cs">
+      <DependentUpon>Fun.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fun.aspx.designer.cs">
+      <DependentUpon>Fun.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fun2.aspx.cs">
+      <DependentUpon>fun2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fun2.aspx.designer.cs">
+      <DependentUpon>fun2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Game.aspx.cs">
+      <DependentUpon>Game.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Game.aspx.designer.cs">
+      <DependentUpon>Game.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="home.aspx.designer.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homeaft.aspx.cs">
+      <DependentUpon>Homeaft.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homeaft.aspx.designer.cs">
+      <DependentUpon>Homeaft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="java.aspx.cs">
+      <DependentUpon>java.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="java.aspx.designer.cs">
+      <DependentUpon>java.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="javaquiz.aspx.cs">
+      <DependentUpon>javaquiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="javaquiz.aspx.designer.cs">
+      <DependentUpon>javaquiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MG2.aspx.cs">
+      <DependentUpon>MG2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MG2.aspx.designer.cs">
+      <DependentUpon>MG2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MG3.aspx.cs">
+      <DependentUpon>MG3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MG3.aspx.designer.cs">
+      <DependentUpon>MG3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MindGames.aspx.cs">
+      <DependentUpon>MindGames.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MindGames.aspx.designer.cs">
+      <DependentUpon>MindGames.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="net.aspx.cs">
+      <DependentUpon>net.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="net.aspx.designer.cs">
+      <DependentUpon>net.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="netquiz.aspx.cs">
+      <DependentUpon>netquiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="netquiz.aspx.designer.cs">
+      <DependentUpon>netquiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="op.aspx.cs">
+      <DependentUpon>op.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="op.aspx.designer.cs">
+      <DependentUpon>op.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="osquiz.aspx.cs">
+      <DependentUpon>osquiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="osquiz.aspx.designer.cs">
+      <DependentUpon>osquiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phy.aspx.cs">
+      <DependentUpon>phy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phy.aspx.designer.cs">
+      <DependentUpon>phy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="phyquiz.aspx.cs">
+      <DependentUpon>phyquiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="phyquiz.aspx.designer.cs">
+      <DependentUpon>phyquiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quizhpg.aspx.cs">
+      <DependentUpon>quizhpg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="quizhpg.aspx.designer.cs">
+      <DependentUpon>quizhpg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registerkz.aspx.cs">
+      <DependentUpon>Registerkz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registerkz.aspx.designer.cs">
+      <DependentUpon>Registerkz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="services.aspx.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="services.aspx.designer.cs">
+      <DependentUpon>services.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56373</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44377/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,135 @@
+﻿body {
+    background-color: #96ffb8;
+}
+
+.maindiv {
+    width: 1535px;
+    height: 317px;
+    position: absolute;
+    left: 50%;
+    background-image: url('imgs/bbg1.jpg');
+    top: 22%;
+    transform: translate(-50%, -50%);
+    background-size: 100% 100%;
+}
+
+.img2 {
+    position: absolute;
+    top: 91px;
+    left: 681px;
+    border-radius: 50%;
+}
+
+
+
+.navbar {
+    margin: 25px auto;
+    display: flex;
+    align-item: left;
+    font-size: 20px;
+}
+
+ul {
+    flex: 1;
+}
+
+    ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 15px;
+    }
+
+        ul li a {
+            font-size: 21px;
+            text-decoration: none;
+            color: white;
+            padding: 0 10px;
+            position: relative;
+        }
+
+            ul li a::after {
+                content: ' ';
+                width: 0%;
+                height: 10px;
+                background: #2afae2;
+                position: absolute;
+                left: 90%;
+                transform: translate(-50%);
+                top: -190%;
+                transition: 0.5s;
+            }
+
+            ul li a:hover::after {
+                width: 100%;
+            }
+
+.card {
+    background-color: white;
+    max-width: 300px;
+    margin-left: -600px;
+    margin-top: 108px;
+    text-align: center;
+    font-family: arial;
+}
+
+
+.card2 {
+    background-color: white;
+    max-width: 300px;
+    margin-left: 462px;
+    margin-top: -383px;
+    text-align: center;
+    font-family: arial;
+}
+
+.card3 {
+    background-color: white;
+    max-width: 300px;
+    margin-left: -62px;
+    margin-top: -383px;
+    text-align: center;
+    font-family: arial;
+}
+
+.btn {
+    margin-left: -10px;
+    border: none;
+    outline: 0;
+    height: auto;
+    color: white;
+    background-color: #4069d8;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.price {
+    color: black;
+    font-size: 22px;
+}
+
+.b {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+
+.card:hover {
+    box-shadow: 2px 2px 10px 10px #1dfb6b;
+}
+
+.card2:hover {
+    box-shadow: 2px 2px 10px 10px #1dfb6b;
+}
+
+.card3:hover {
+    box-shadow: 2px 2px 10px 10px #1dfb6b;
+}
